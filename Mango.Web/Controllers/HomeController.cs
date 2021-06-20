@@ -43,7 +43,7 @@ namespace Mango.Web.Controllers
 
         public IActionResult Logout()
         {
-            return SignOut("Cookies", "oids");
+            return SignOut("Cookies", "oidc");
         }
     }
 }
