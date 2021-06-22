@@ -1,15 +1,16 @@
 ﻿using Mango.Services.ShoppingCartAPI.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Mango.Services.ShoppingCartAPI.Models
 {
-    public class CartDetail
+    public class CartDetails
     {
-        public int CartDetaildId { get; set; }
+        public int CartDetailsId { get; set; }
         public int CartHeaderId { get; set; }
         [ForeignKey("CartHeaderId")]
         public virtual CartHeader CartHeader { get; set; }
